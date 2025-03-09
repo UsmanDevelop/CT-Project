@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
+import clock from './../assets/HASSLE.png'
 
 const springValues = {
     damping: 30,
@@ -8,7 +9,6 @@ const springValues = {
 };
 
 export default function TiltedCard({
-    imageSrc,
     containerHeight = "300px",
     containerWidth = "100%",
     headingText = "",
@@ -17,8 +17,7 @@ export default function TiltedCard({
     imageWidth = "300px",
     scaleOnHover = 1.1,
     rotateAmplitude = 20,
-    showMobileWarning = true,
-    pad = false
+    img = {}
 }) {
     const ref = useRef(null);
     const x = useMotionValue(0);
@@ -73,7 +72,7 @@ export default function TiltedCard({
 
         <figure
             ref={ref}
-            className="relative w-full h-full [perspective:800px] flex flex-col items-center justify-center"
+            className="relative w-full h-full [perspective:800px] flex flex-col items-center justify-center mb-10"
             style={{
                 height: containerHeight,
                 width: containerWidth,
@@ -82,11 +81,6 @@ export default function TiltedCard({
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            {showMobileWarning && (
-                <div className="absolute top-4 text-center text-sm block sm:hidden">
-                    This effect is not optimized for mobile. Check on desktop.
-                </div>
-            )}
 
             <motion.div
                 className="relative [transform-style:preserve-3d]"
@@ -98,27 +92,17 @@ export default function TiltedCard({
                     scale,
                 }}
             >
-                {/* <motion.img
-                    src={imageSrc}
-                    alt={altText}
-                    className="absolute top-0 left-0 object-cover rounded-[15px] will-change-transform [transform:translateZ(0)]"
-                    style={{
-                        width: imageWidth,
-                        height: imageHeight,
-                    }}
-                /> */}
+                <motion.div
+                    className={'absolute top-0 left-0 z-[2] will-change-transform [transform:translateZ(30px)] flex flex-col justify-evenly h-contain bg-gradient-to-b from-black to-yellow-950 p-6 rounded-lg text-center'}
+                >
+                    <img src={img} className="h-60 w-60"/>
+                    <h3 className="text-xl font-semibold">{headingText}</h3>
+                    <p className="text-gray-400 mt-2">
+                        {paraText}
+                    </p>
 
-                
-                    <motion.div
-                        className={'absolute top-0 left-0 z-[2] will-change-transform [transform:translateZ(30px)] flex flex-col justify-evenly h-full bg-gradient-to-b from-black to-yellow-950 p-6 rounded-lg text-center'}
-                    >
-                        <h3 className="text-xl font-semibold">{headingText}</h3>
-                        <p className="text-gray-400 mt-2">
-                            {paraText}
-                        </p>
-                        
-                    </motion.div>
-                
+                </motion.div>
+
             </motion.div>
         </figure>
     );

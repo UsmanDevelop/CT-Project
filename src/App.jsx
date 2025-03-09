@@ -12,14 +12,17 @@ function App() {
 
   return (
     <>
-    <div className='flex flex-col  items-center align-bottom h-fit bg-black'>
+    <div className='flex flex-col  items-center align-bottom h-full bg-black'>
 
+      
       <NavBar/>
       <Home/>
 
       <Services/>
       <HowItWorks/>
-      <Partners/>
+      <div className='h-screen'>
+        <Partners/>
+      </div>
       <Footer/>
     </div>
     </>
