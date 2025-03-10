@@ -8,7 +8,7 @@ import phone from './../assets/INSTANT.png'
 
 function Services() {
   return (
-    <section className="bg-black text-white py-16 px-8 h-fit md:h-screen pt-7">
+    <section className="bg-black text-white py-16 px-8 h-fit md:h-contain pt-7 mb-10">
       <div className="text-center">
         <h3 className="text-orange-500 uppercase tracking-widest">Our Services</h3>
         <h2 className="text-4xl font-bold mt-2">
@@ -41,7 +41,7 @@ function Services() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 item-center ">
         {/* Service Card */}
         <TiltedCard
           // imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"

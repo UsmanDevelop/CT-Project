@@ -7,24 +7,30 @@ import Footer from './Pages/Footer'
 
 import './App.css'
 
+
+
+
+
+
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-    <div className='flex flex-col  items-center align-bottom h-full bg-black'>
+      <div className='flex flex-col  items-center align-bottom h-full bg-black'>
 
-      
-      <NavBar/>
-      <Home/>
 
-      <Services/>
-      <HowItWorks/>
-      <div className='h-screen'>
-        <Partners/>
+        <NavBar />
+        <Home />
+
+        <Services />
+        <HowItWorks />
+
+        <div className='h-screen'>
+          <Partners />
+        </div>
+        <Footer />
       </div>
-      <Footer/>
-    </div>
     </>
   )
 }

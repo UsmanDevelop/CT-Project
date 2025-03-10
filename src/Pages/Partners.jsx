@@ -9,14 +9,14 @@ import brandLogo5 from './../assets/brandLogo5.png'
 
 function Partners() {
   return (
-    <div className="bg-black text-white h-contain">
+    <div className=" max-w-screen text-white h-contain ">
       {/* Partners Section */}
-      <div className="pt-10 text-center text-5xl font-extrabold font-serif bg-gradient-to-l from-black to-yellow-900 mb-6 w-full h-30 bg-amber-200">
+        <div className="pt-10 text-center text-5xl font-extrabold font-serif lg:w-[96%] bg-gradient-to-l from-black to-yellow-900 mb-6 h-30">
         Our <span className="text-[#fe971e]">Partners</span>
       </div>
 
-      <div className='max-w-screen overflow-hidden'>
-        <Marquee className='min-w-full' pauseOnHover gradient gradientColor='black' gradientWidth={250}>
+      <div className=' w-screen overflow-hidden lg:w-[95%]'>
+        <Marquee className='w-screen' pauseOnHover gradient gradientColor='black'>
           
           <svg xmlns="http://www.w3.org/2000/svg" className='relative top-0 right-0 h-30 w-5' >
             <line x1="10" y1="0" x2="10" y2="200" stroke="#fe971e" strokeWidth="4" />
