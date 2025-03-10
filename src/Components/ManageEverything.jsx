@@ -2,7 +2,7 @@ import React from 'react'
 
 import mobilemockup from './../assets/mobilemockup.png'
 import rateRider from './../assets/raterider.png'
-import manageOrder from './../assets/manaeorders.png'
+import manageOrder from './../assets/manageorders.png'
 import support from './../assets/support.png'
 import trackPayment from './../assets/trackorders.png'
 import trackShipment from './../assets/trackshipments.png'
@@ -12,12 +12,12 @@ import bookAppointment from './../assets/bookshipments.png'
 function ManageEverything() {
   
   const cards = [
-    { title: "Rate the Rider", description: "Give feedback to improve service quality.", icon: "⭐", position: "top-[-750px] left-[-250px]" },
-    { title: "Support", description: "Get 24/7 assistance whenever you need it.", icon: "💬", position: "right-[20%]" },
-    { title: "Track Shipments", description: "Real-time tracking for all your deliveries.", icon: "📦", position: "left-[10%] " },
-    { title: "Manage Orders", description: "Keep track of all past & current shipments.", icon: "📋", position: "right-[10%]" },
-    { title: "Book Your Shipment", description: "Schedule pickups & manage shipments easily.", icon: "🚚", position: "left-[10%] bottom-[10%]" },
-    { title: "Track Your Payments", description: "View completed & pending payments.", icon: "💰", position: "right-[10%] bottom-[10%]" },
+    { title: "Rate the Rider", description: "Give feedback to improve service quality.", icon: rateRider, position: "top-[-47crem] left-[-4rem] lg:left-[-15rem] md:left-[-20rem]" },
+    { title: "Support", description: "Get 24/7 assistance whenever you need it.", icon: rateRider, position: "top-[-42rem] right-[-4rem] lg:right-[-15rem] md:right-[-20rem]" },
+    { title: "Track Shipments", description: "Real-time tracking for all your deliveries.", icon: rateRider, position: "left-[10%] " },
+    { title: "Manage Orders", description: "Keep track of all past & current shipments.", icon: rateRider, position: "right-[10%]" },
+    { title: "Book Your Shipment", description: "Schedule pickups & manage shipments easily.", icon: rateRider, position: "left-[10%] bottom-[10%]" },
+    { title: "Track Your Payments", description: "View completed & pending payments.", icon: rateRider, position: "right-[10%] bottom-[10%]" },
   ];
   
   return (
@@ -38,15 +38,17 @@ function ManageEverything() {
         {cards.map((card, index) => (
           <div
             key={index}
-            className={`relative bg-[#1a1a1a] shadow-lg p-4 rounded-lg w-56 md:w-64 lg:w-72 flex items-center gap-3 ${card.position} transition-all`}
+            className={`relative bg-[#241c0f] shadow-lg p-4 rounded-lg w-66 md:w-64 lg:w-92 flex items-center gap-3 ${card.position} transition-all`}
           >
+
             {/* Icon Placeholder (Replace with actual icons/images if needed) */}
-            <div className="text-orange-500 text-3xl">{card.icon}</div>
+            <img src={card.icon} alt={card.title} className="h-66 w-66 m-[-90px]" />
             <div>
               <h3 className="font-bold text-white text-sm md:text-lg">{card.title}</h3>
               <p className="text-gray-400 text-xs md:text-sm">{card.description}</p>
             </div>
           </div>
+
         ))}
 
 
