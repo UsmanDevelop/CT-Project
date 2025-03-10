@@ -12,12 +12,12 @@ import bookAppointment from './../assets/bookshipments.png'
 function ManageEverything() {
   
   const cards = [
-    { title: "Rate the Rider", description: "Give feedback to improve service quality.", icon: rateRider, position: "top-[-47crem] left-[-4rem] lg:left-[-15rem] md:left-[-20rem]" },
-    { title: "Support", description: "Get 24/7 assistance whenever you need it.", icon: rateRider, position: "top-[-42rem] right-[-4rem] lg:right-[-15rem] md:right-[-20rem]" },
-    { title: "Track Shipments", description: "Real-time tracking for all your deliveries.", icon: rateRider, position: "left-[10%] " },
-    { title: "Manage Orders", description: "Keep track of all past & current shipments.", icon: rateRider, position: "right-[10%]" },
-    { title: "Book Your Shipment", description: "Schedule pickups & manage shipments easily.", icon: rateRider, position: "left-[10%] bottom-[10%]" },
-    { title: "Track Your Payments", description: "View completed & pending payments.", icon: rateRider, position: "right-[10%] bottom-[10%]" },
+    { title: "Rate the Rider", description: "Give feedback to improve service quality.", icon: rateRider, position: "top-[-47rem] left-[-2rem] lg:left-[-15rem] md:left-[-20rem]" },
+    { title: "Support", description: "Get 24/7 assistance whenever you need it.", icon: support, position: "top-[-46rem] right-[-2rem] lg:right-[-15rem] md:right-[-20rem]" },
+    { title: "Track Shipments", description: "Real-time tracking for all your deliveries.", icon: trackShipment, position: "top-[-45rem] left-[-2rem] lg:left-[-30rem] md:left-[-30rem] " },
+    { title: "Manage Orders", description: "Keep track of all past & current shipments.", icon: manageOrder, position: "right-[10%]" },
+    { title: "Book Your Shipment", description: "Schedule pickups & manage shipments easily.", icon: bookAppointment, position: "left-[10%] bottom-[10%]" },
+    { title: "Track Your Payments", description: "View completed & pending payments.", icon: trackPayment, position: "right-[10%] bottom-[10%]" },
   ];
   
   return (
