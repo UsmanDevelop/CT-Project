@@ -55,7 +55,10 @@ function Partners() {
 
         </Marquee>
       </div>
+      <div className='h-150'>
+
       <ManageEverything/>
+      </div>
     </div>
   );
 }

@@ -12,28 +12,25 @@ import bookAppointment from './../assets/bookshipments.png'
 function ManageEverything() {
   
   const cards = [
-    { title: "Rate the Rider", description: "Give feedback to improve service quality.", icon: rateRider, position: "top-[-47rem] left-[-2rem] lg:left-[-15rem] md:left-[-20rem]" },
-    { title: "Support", description: "Get 24/7 assistance whenever you need it.", icon: support, position: "top-[-46rem] right-[-2rem] lg:right-[-15rem] md:right-[-20rem]" },
-    { title: "Track Shipments", description: "Real-time tracking for all your deliveries.", icon: trackShipment, position: "top-[-45rem] left-[-2rem] lg:left-[-30rem] md:left-[-30rem] " },
-    { title: "Manage Orders", description: "Keep track of all past & current shipments.", icon: manageOrder, position: "right-[10%]" },
-    { title: "Book Your Shipment", description: "Schedule pickups & manage shipments easily.", icon: bookAppointment, position: "left-[10%] bottom-[10%]" },
-    { title: "Track Your Payments", description: "View completed & pending payments.", icon: trackPayment, position: "right-[10%] bottom-[10%]" },
+    { title: "Rate the Rider", description: "Give feedback to improve service quality.", icon: rateRider, position: "top-[-67rem] left-[-2rem] lg:left-[-15rem] md:left-[-15rem]" },
+    { title: "Support", description: "Get 24/7 assistance whenever you need it.", icon: support, position: "top-[-66rem] right-[-2rem] lg:right-[-25rem] md:right-[-15rem]" },
+    { title: "Track Shipments", description: "Real-time tracking for all your deliveries.", icon: trackShipment, position: "top-[-65rem] left-[-2rem] lg:left-[-30rem] md:left-[-10rem] " },
+    { title: "Manage Orders", description: "Keep track of all past & current shipments.", icon: manageOrder, position: "top-[-64rem] right-[-2rem] lg:right-[-15rem] md:right-[-10rem] md:top-[-67rem]" },
+    { title: "Book Your Shipment", description: "Schedule pickups & manage shipments easily.", icon: bookAppointment, position: "top-[-63rem] left-[-2rem] lg:left-[-15rem] md:left-[-15rem]" },
+    { title: "Track Your Payments", description: "View completed & pending payments.", icon: trackPayment, position: "top-[-62rem] right-[-2rem] lg:right-[-25rem] md:right-[-15rem] md:top-[-70rem]" },
   ];
   
   return (
     <>
-    <div className='w-contain flex flex-col align-bottom justify-center items-center'>
+    <div className=' w-full h-full pt-250 flex flex-col align-bottom justify-center items-center h-contain'>
     
-    <div className="pt-10 text-center text-5xl items-center font-extrabold font-serif mb-6 w-contain  h-30 ">
+    <div className="text-center text-5xl items-center font-extrabold font-serif mb-6 w-contain h-30 ">
         Manage Everything in <span className="text-[#fe971e]">One Place!</span>
     </div>
-    <div className='items-center'>
-      <img className='h-200 w-200' src={mobilemockup}/>
+    <div className='items-center h-'>
+      <img className='h-300 w-250' src={mobilemockup}/>
     </div>
-
-
-
-        
+       
         {/* Floating Cards */}
         {cards.map((card, index) => (
           <div
@@ -50,12 +47,6 @@ function ManageEverything() {
           </div>
 
         ))}
-
-
-
-
-
-
     
     </div>
     </>

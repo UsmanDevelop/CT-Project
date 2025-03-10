@@ -26,7 +26,7 @@ function App() {
         <Services />
         <HowItWorks />
 
-        <div className='h-screen'>
+        <div className='h-contain'>
           <Partners />
         </div>
         <Footer />
