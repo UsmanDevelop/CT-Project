@@ -4,7 +4,9 @@ import { FaInstagram, FaYoutube, FaTwitter, FaFacebook, FaLinkedin } from "react
 import { IoLocationSharp } from "react-icons/io5";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { BsFillEnvelopeFill } from "react-icons/bs";
-import { GiRotaryPhone } from "react-icons/gi";
+import { GiRotaryPhone } from "react-icons/gi"
+
+import footerLogo from './../assets/Home/Footer/footerLogo.png'
 
 function Footer() {
   return (
@@ -12,10 +14,9 @@ function Footer() {
       <div className="container mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:pl-56">
         
         <div className='flex justify-center align-bottom flex-col'>
-          <svg width='100px' height='100px' className='border-2 border-amber-50'>
-
-          </svg>
-          <h3 className="text-white font-semibold mb-4 text-lg">Follow Us</h3>
+          {/* <svg width='100px' height='100px' className='border-2 border-amber-50'></svg> */}
+          <img src={footerLogo} className='h-20 w-20'/>
+          <p className="text-gray-400 mt-4 mb-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel quam velit. Nam est eros, porttitor eu malesuada eget</p>
           <div className="flex space-x-3 mb-4">
             <NavLink className="text-2xl text-blue-400 hover:text-orange-400"><FaTwitter/></NavLink>
             <NavLink className="text-2xl text-[#5851db] hover:text-orange-400"><FaInstagram/></NavLink>
