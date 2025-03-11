@@ -1,18 +1,10 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
-import { FaInstagram,
-  FaYoutube,
-  FaTwitter,
-  FaFacebook,
-  FaLinkedin
- } from "react-icons/fa";
- import { IoLocationSharp } from "react-icons/io5";
- import { FaPhoneVolume } from "react-icons/fa6";
- import { TfiEmail } from "react-icons/tfi";
-//  import mail from "../assets/mail.svg"
- import { ImMail } from "react-icons/im";
- import { BsFillEnvelopeFill } from "react-icons/bs";
- import { GiRotaryPhone } from "react-icons/gi";
+import { FaInstagram, FaYoutube, FaTwitter, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { IoLocationSharp } from "react-icons/io5";
+import { FaPhoneVolume } from "react-icons/fa6";
+import { BsFillEnvelopeFill } from "react-icons/bs";
+import { GiRotaryPhone } from "react-icons/gi";
 
 function Footer() {
   return (
