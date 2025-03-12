@@ -22,20 +22,20 @@ function ManageEverything() {
   
   return (
     <>
-    <div className=' w-full h-full pt-250 flex flex-col align-bottom justify-center items-center h-contain'>
+    <div className=' w-full flex flex-col align-bottom justify-center items-center h-[90%] mt-[200px]'>
     
-    <div className="text-center text-5xl items-center font-extrabold font-serif mb-6 w-contain h-30 ">
+    <div className="text-center text-5xl items-center font-extrabold font-serif w-contain h-30 ">
         Manage Everything in <span className="text-[#fe971e]">One Place!</span>
     </div>
-    <div className='items-center h-'>
-      <img className='h-300 w-250' src={mobilemockup}/>
+    <div className='items-center relative '>
+      <img className='w-150' src={mobilemockup}/>
     </div>
        
         {/* Floating Cards */}
         {cards.map((card, index) => (
           <div
             key={index}
-            className={`relative bg-[#241c0f] shadow-lg p-4 rounded-lg w-66 md:w-64 lg:w-92 flex items-center gap-3 ${card.position} transition-all`}
+            className={`absolute bg-[#241c0f] shadow-lg p-4 rounded-lg w-66 md:w-64 lg:w-92 flex items-center gap-3 ${card.position} transition-all`}
           >
 
             {/* Icon Placeholder (Replace with actual icons/images if needed) */}

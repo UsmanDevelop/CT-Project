@@ -29,7 +29,10 @@ function App() {
         <div className='h-contain'>
           <Partners />
         </div>
+        <div className=' top-[-15rem] relative h-fit'>
+
         <Footer />
+        </div>
       </div>
     </>
   )

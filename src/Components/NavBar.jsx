@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {NavLink} from 'react-router-dom'
 
 function NavBar() {
     return (
@@ -9,12 +9,12 @@ function NavBar() {
         RABBIT<span className="text-[#fe971e]">.</span>
       </div>
       <div className="hidden md:flex space-x-6">
-        <a href="#" className="hover:text-[#fe971e]">COD</a>
-        <a href="#" className="hover:text-[#fe971e]">Business Suite</a>
-        <a href="#" className="hover:text-[#fe971e]">Financing</a>
-        <a href="#" className="hover:text-[#fe971e] flex items-center">
+        <NavLink to='/cod' className="hover:text-[#fe971e]">COD</NavLink>
+        <NavLink to='' className="hover:text-[#fe971e]">Business Suite</NavLink>
+        <NavLink to='' className="hover:text-[#fe971e]">Financing</NavLink>
+        <NavLink to='' className="hover:text-[#fe971e] flex items-center">
           Track Order <span className="ml-1">🚚</span>
-        </a>
+        </NavLink>
       </div>
       <div className="space-x-4">
         <button className="border-2 cursor-pointer border-[#fe971e] text-[#fe971e] px-4 py-1 rounded-2xl hover:bg-[#fe971e] hover:text-white transition">

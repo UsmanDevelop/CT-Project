@@ -10,7 +10,7 @@ import footerLogo from './../assets/Home/Footer/footerLogo.png'
 
 function Footer() {
   return (
-    <footer className="bg-[#140e09] text-gray-300 text-sm w-full mt-100">
+    <footer className="bg-[#140e09] text-gray-300 text-sm w-full">
       <div className="container mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:pl-56">
         
         <div className='flex justify-center align-bottom flex-col'>
