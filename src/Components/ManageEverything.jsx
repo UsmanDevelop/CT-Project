@@ -1,12 +1,12 @@
 import React from 'react'
 
-import mobilemockup from './../assets/mobilemockup.png'
-import rateRider from './../assets/raterider.png'
-import manageOrder from './../assets/manageorders.png'
-import support from './../assets/support.png'
-import trackPayment from './../assets/trackorders.png'
-import trackShipment from './../assets/trackshipments.png'
-import bookAppointment from './../assets/bookshipments.png'
+import mobilemockup from './../assets/Home/ManageEverything'
+import rateRider from './../assets/Home/ManageEverythingraterider.png'
+import manageOrder from './../assets/Home/ManageEverythingmanageorders.png'
+import support from './../assets/Home/ManageEverythingsupport.png'
+import trackPayment from './../assets/Home/ManageEverythingtrackorders.png'
+import trackShipment from './../assets/Home/ManageEverythingtrackshipments.png'
+import bookAppointment from './../assets/Home/ManageEverythingbookshipments.png'
 
 
 function ManageEverything() {
