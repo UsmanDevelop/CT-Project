@@ -1,6 +1,6 @@
 import React from 'react'
 
-import mobilemockup from './../assets/Home/ManageEverything'
+import mobilemockup from './../assets/Home/ManageEverything/mobilemockup.png'
 import rateRider from './../assets/Home/ManageEverythingraterider.png'
 import manageOrder from './../assets/Home/ManageEverythingmanageorders.png'
 import support from './../assets/Home/ManageEverythingsupport.png'
