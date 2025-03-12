@@ -6,32 +6,17 @@ import secure from './../assets/SECURETRANSIT.png'
 import forwarding from './../assets/FORWARDING.png'
 import finalDelivery from './../assets/FINALDELIVERY.png'
 import payment from './../assets/PAYMENTTRANSFER.png'
+import path from './../assets/PATH.png'
 
 
 
 
 const steps = [
   { title: "Pickup from Your Location", description: "Our rider picks up your parcel from your home or office.", img: pickup },
-  {
-    title: "Secure Transit to Warehouse",
-    description: "The parcel is safely stored in our warehouse before forwarding.",
-    img: secure,
-  },
-  {
-    title: "Forwarding to Destination",
-    description: "We process and send the parcel to the destination warehouse.",
-    img: forwarding,
-  },
-  {
-    title: "Final Delivery Attempt",
-    description: "Our rider delivers the parcel to your client, attempting 2-3 times if needed.",
-    img: finalDelivery,
-  },
-  {
-    title: "Payment Transfer or Return",
-    description: "Successful delivery? Your payment is transferred. If returned, the parcel comes back safely.",
-    img: payment,
-  },
+  { title: "Secure Transit to Warehouse", description: "The parcel is safely stored in our warehouse before forwarding.", img: secure, },
+  { title: "Forwarding to Destination", description: "We process and send the parcel to the destination warehouse.", img: forwarding, },
+  { title: "Final Delivery Attempt", description: "Our rider delivers the parcel to your client, attempting 2-3 times if needed.", img: finalDelivery, },
+  { title: "Payment Transfer or Return", description: "Successful delivery? Your payment is transferred. If returned, the parcel comes back safely.", img: payment, },
 ];
 
 
@@ -48,12 +33,12 @@ function HowItWorks() {
 
         <div className="relative bg-black text-white py-10 px-5">
           <div className="max-w-5xl mx-auto relative">
-            <div className="absolute top-1/2 left-5  m-4 w-full h-2 bg-gray-700 rounded-full hidden lg:block"></div>
+            {/* <div className="absolute top-1/2 left-5  m-4 w-full h-2 bg-gray-700 rounded-full hidden lg:block"></div> */}
 
             <div className="flex flex-col md:flex-row md:flex-wrap md:justify-between">
                   {/* <div className="w-6 h-6 bg-orange-500 rounded-full absolute -top-3 md:-left-3 md:top-1/2"></div> */}
-              
-              {/* {steps.map((step, index) => (
+              <img src={path} className='absolute'/>
+              {steps.map((step, index) => (
                 <div key={index} className={`relative flex flex-col items-center text-center p-5 md:w-1/2 lg:w-1/3 ${index % 2 === 0 ? "md:self-start" : "md:self-end"}`}>
 
                   <ShapeBlur
@@ -70,7 +55,7 @@ function HowItWorks() {
                   <h3 className="font-bold text-lg mt-3">{step.title}</h3>
                   <p className="text-gray-400 mt-2 text-sm text-center p-6 mr-10 ml-10">{step.description}</p>
                 </div>
-              ))} */}
+              ))}
             </div>
           </div>
         </div>
