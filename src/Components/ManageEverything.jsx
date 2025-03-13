@@ -35,10 +35,8 @@ function ManageEverything() {
         {cards.map((card, index) => (
           <div
             key={index}
-            className={`absolute bg-[#241c0f] shadow-lg p-4 rounded-lg w-66 md:w-64 lg:w-92 flex items-center gap-3 ${card.position} transition-all`}
+            className={`relative bg-[#241c0f] shadow-lg p-4 rounded-lg w-66 md:w-64 lg:w-92 flex items-center ${card.position} transition-all`}
           >
-
-            {/* Icon Placeholder (Replace with actual icons/images if needed) */}
             <img src={card.icon} alt={card.title} className="h-66 w-66 m-[-90px]" />
             <div>
               <h3 className="font-bold text-white text-sm md:text-lg">{card.title}</h3>
