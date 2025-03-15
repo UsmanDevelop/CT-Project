@@ -1,11 +1,20 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
-function NavBar() {
+
+const NavBar = () =>{
+    const navigate = useNavigate()
+    
+  
+    const handleHome = ()=>{
+      navigate('/')
+    }
+
     return (
         <>
         <nav className="shadow-md shadow-yellow-950 opacity-95 rounded-2xl w-full bg-gradient-to-r from-gray-950 to-yellow-900 text-white py-4 px-6 flex justify-between items-center">
-      <div className="text-xl font-bold italic">
+      <div className="text-xl font-bold italic cursor-pointer" onClick={handleHome}>
         RABBIT<span className="text-[#fe971e]">.</span>
       </div>
       <div className="hidden md:flex space-x-6">

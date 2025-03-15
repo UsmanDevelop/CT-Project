@@ -44,7 +44,7 @@ const COD = () => {
         <div className=" flex flex-col items-center w-full  h-screen align-middle justify-between ">
           <NavBar />
 
-          <div className='md:flex md:flex-row justify-between bg-radial-[at_20%_28%] from-[#452811] to-30% w-full md:p-19'>
+          <div className='md:flex md:flex-row justify-between bg-radial-[at_16%_26%] from-[#452811] to-30% w-full md:p-19'>
             {/* Left Side Content */}
             <div className="md:w-1/2 text-center md:text-left">
 
@@ -77,7 +77,7 @@ const COD = () => {
                     <p className="text-gray-400">Happy & Growing Partners</p>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" className='h-30 w-5' >
-                    <line x1="10" y1="0" x2="10" y2="200" stroke="white" strokeWidth="4" />
+                    <line x1="10" y1="0" x2="10" y2="200" stroke="white" strokeWidth="1" />
                   </svg>
                   <div>
                     <h2 className="text-green-400 text-3xl font-bold"><Count
@@ -96,7 +96,7 @@ const COD = () => {
 
               </div>
 
-              <div className="mt-8">
+              <div className="m-8">
                 <button className="bg-green-400 hover:bg-green-500 text-black font-semibold px-6 py-3 rounded-full shadow-lg transition duration-300">
                   Contact Sales
                 </button>
@@ -116,7 +116,7 @@ const COD = () => {
         </div>
 
       </section>
-      <div className='h-[600px] xl:w-full relative text-white items-center'>
+      <div className='h-[600px] xl:w-full relative text-white items-center pt-50'>
         <Scroll items={items} />
       </div>
 
