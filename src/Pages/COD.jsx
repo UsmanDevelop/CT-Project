@@ -51,7 +51,7 @@ function COD() {
             </div>
 
             {/* Right Side: Map Image */}
-            <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center bg-amber-800">
+            <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center bg-black">
               <img
                 src="/mnt/data/image.png" // Replace with the correct image path
                 alt="Map Representation"
