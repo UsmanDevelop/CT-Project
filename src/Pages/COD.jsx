@@ -41,12 +41,12 @@ const COD = () => {
       {/* > */}
       {/* <Cursor/> */}
       <section className="bg-black text-white  xl:h-screen">
-        <div className=" flex flex-col items-center w-full  h-screen align-middle justify-between">
+        <div className=" flex flex-col items-center w-full  h-screen align-middle justify-between ">
           <NavBar />
 
-          <div className='md:flex md:flex-row justify-between bg-black w-full md:p-19'>
+          <div className='md:flex md:flex-row justify-between bg-radial-[at_20%_28%] from-[#452811] to-30% w-full md:p-19'>
             {/* Left Side Content */}
-            <div className="md:w-1/2 text-center md:text-left bg-black">
+            <div className="md:w-1/2 text-center md:text-left">
 
               <div className='items-center text-center justify-center flex flex-col gap-5 mt-10'>
                 <h4 className="text-green-400 font-bold uppercase ">Rabbit Cash On Delivery</h4>
