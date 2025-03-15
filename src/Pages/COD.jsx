@@ -1,7 +1,10 @@
 import React from 'react'
 import NavBar from './../Components/NavBar'
 import Count from './../Components/Counter'
-function COD() {
+import Cursor from './../Components/CursorSplash'
+
+
+const COD = () =>{
   return (
     <>
       {/* <div className="bg-black h-screen text-white w-full h-fit px-12 bg-radial-[at_90%_80%] from-[#fe971e] to-15%"
@@ -11,6 +14,7 @@ function COD() {
           // zIndex: -1
         }} */}
       {/* > */}
+      {/* <Cursor/> */}
       <section className="bg-black text-white  xl:h-screen">
         <div className=" flex flex-col items-center w-full  h-screen align-middle justify-between">
           <NavBar />
@@ -32,9 +36,9 @@ function COD() {
               </div>
 
               <div className="flex flex-col sm:flex-row mt-8 space-y-6 sm:space-y-0 sm:space-x-12">
-                
+
                 <div className='flex gap-15'>
-                  <div>
+                  <div c>
                     <h2 className="text-green-400 text-3xl font-bold">
                       <Count
                         from={0}
@@ -47,6 +51,9 @@ function COD() {
                     </h2>
                     <p className="text-gray-400">Happy & Growing Partners</p>
                   </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" className='h-30 w-5' >
+                      <line x1="10" y1="0" x2="10" y2="200" stroke="white" strokeWidth="4" />
+                    </svg>
                   <div>
                     <h2 className="text-green-400 text-3xl font-bold"><Count
                       from={0}
