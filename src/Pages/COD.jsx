@@ -2,9 +2,34 @@ import React from 'react'
 import NavBar from './../Components/NavBar'
 import Count from './../Components/Counter'
 import Cursor from './../Components/CursorSplash'
+import Scroll from './../Components/ScrollCod'
 
 
-const COD = () =>{
+
+const COD = () => {
+  const items = [
+    {
+      image: 'https://picsum.photos/300/300?grayscale',
+      link: 'https://google.com/',
+      title: 'Screen 1'
+    },
+    {
+      image: 'https://picsum.photos/400/400?grayscale',
+      link: 'https://google.com/',
+      title: 'Screen 2'
+    },
+    {
+      image: 'https://picsum.photos/500/500?grayscale',
+      link: 'https://google.com/',
+      title: 'Screen 3'
+    },
+    {
+      image: 'https://picsum.photos/600/600?grayscale',
+      link: 'https://google.com/',
+      title: 'Screen 4'
+    }
+  ];
+
   return (
     <>
       {/* <div className="bg-black h-screen text-white w-full h-fit px-12 bg-radial-[at_90%_80%] from-[#fe971e] to-15%"
@@ -51,9 +76,9 @@ const COD = () =>{
                     </h2>
                     <p className="text-gray-400">Happy & Growing Partners</p>
                   </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" className='h-30 w-5' >
-                      <line x1="10" y1="0" x2="10" y2="200" stroke="white" strokeWidth="4" />
-                    </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" className='h-30 w-5' >
+                    <line x1="10" y1="0" x2="10" y2="200" stroke="white" strokeWidth="4" />
+                  </svg>
                   <div>
                     <h2 className="text-green-400 text-3xl font-bold"><Count
                       from={0}
@@ -91,6 +116,14 @@ const COD = () =>{
         </div>
 
       </section>
+      <div className='h-[600px] xl:w-full relative text-white items-center'>
+        <Scroll items={items} />
+      </div>
+
+
+      <div className='h-600 relative bg-amber-950 text-white'>
+        THIS IS MY NEXT DIV
+      </div>
       {/* </div> */}
     </>
   )
