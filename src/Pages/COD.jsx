@@ -73,7 +73,7 @@ const COD = () => {
                         duration={1}
                         className="count-up-text"
                       />+
-                    </h2>
+                    </h2> 
                     <p className="text-gray-400">Happy & Growing Partners</p>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" className='h-30 w-5' >
@@ -116,12 +116,13 @@ const COD = () => {
         </div>
 
       </section>
-      <div className='h-[600px] xl:w-full relative text-white items-center pt-50'>
+      <div className='p-20 h-[900px] xl:w-full relative bg-black text-white items-center mt-50 '>
+
         <Scroll items={items} />
       </div>
 
 
-      <div className='h-600 relative bg-amber-950 text-white'>
+      <div className='h-screen relative bg-amber-950 text-white'>
         THIS IS MY NEXT DIV
       </div>
       {/* </div> */}
