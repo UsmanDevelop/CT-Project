@@ -933,7 +933,7 @@ export default function InfiniteMenu({ items = [] }) {
           absolute
           font-black
           [font-size:4rem]
-          left-[1.6em]
+          left-[0em]
           top-1/2
           transform
           translate-x-[20%]

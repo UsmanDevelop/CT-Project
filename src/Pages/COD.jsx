@@ -3,31 +3,28 @@ import NavBar from './../Components/NavBar'
 import Count from './../Components/Counter'
 import Cursor from './../Components/CursorSplash'
 import Scroll from './../Components/ScrollCod'
-
+import CardOfCod from '../Components/CardOfCod'
+import AvailableIntegration from './../Components/AvailableIntegration'
 
 
 const COD = () => {
   const items = [
-    {
-      image: 'https://picsum.photos/300/300?grayscale',
-      link: 'https://google.com/',
-      title: 'Screen 1'
-    },
-    {
-      image: 'https://picsum.photos/400/400?grayscale',
-      link: 'https://google.com/',
-      title: 'Screen 2'
-    },
-    {
-      image: 'https://picsum.photos/500/500?grayscale',
-      link: 'https://google.com/',
-      title: 'Screen 3'
-    },
-    {
-      image: 'https://picsum.photos/600/600?grayscale',
-      link: 'https://google.com/',
-      title: 'Screen 4'
-    }
+    { image: 'https://picsum.photos/300/300?grayscale', link: 'https://google.com/', title: 'Screen 1' },
+    { image: 'https://picsum.photos/400/400?grayscale', link: 'https://google.com/', title: 'Screen 2' },
+    { image: 'https://picsum.photos/500/500?grayscale', link: 'https://google.com/', title: 'Screen 3' },
+    { image: 'https://picsum.photos/600/600?grayscale', link: 'https://google.com/', title: 'Screen 4' }
+  ];
+  const features = [
+    { icon: "🚚", title: "Same Day Delivery", description: "Experience fast and reliable service with Same Day Delivery, ensuring happy customers and seamless operations.", },
+    { icon: "📍", title: "Nationwide Coverage", description: "We cover the entire country, ensuring your items reach their destination hassle-free.", },
+    { icon: "💲", title: "Flexible Pricing", description: "Adjust costs to fit your budget with customizable options and personalized payment plans.", },
+    { icon: "⚙️", title: "Easy Integration", description: "Instantly integrate our user-friendly APIs with any e-commerce platform for a hassle-free setup.", },
+  ];
+
+  const integrationItems = [
+    'https://picsum.photos/500/500?grayscale',
+    'https://picsum.photos/600/600?grayscale',
+    'https://picsum.photos/400/400?grayscale'
   ];
 
   return (
@@ -73,7 +70,7 @@ const COD = () => {
                         duration={1}
                         className="count-up-text"
                       />+
-                    </h2> 
+                    </h2>
                     <p className="text-gray-400">Happy & Growing Partners</p>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" className='h-30 w-5' >
@@ -122,8 +119,20 @@ const COD = () => {
       </div>
 
 
-      <div className='h-screen relative bg-amber-950 text-white'>
-        THIS IS MY NEXT DIV
+      <div className="min-h-screen bg-black text-white flex flex-col items-center py-12 px-6">
+        <h2 className="text-sm text-green-400 font-semibold">FEATURES</h2>
+        <h1 className="text-3xl font-bold text-center mb-8">
+          State of the Art Logistics Solution
+        </h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-4xl">
+          {features.map((feature, index) => (
+            <CardOfCod key={index} {...feature} />
+          ))}
+        </div>
+      </div>
+
+      <div style={{ height: '600px', position: 'relative' }}>
+        <AvailableIntegration items={integrationItems} />
       </div>
       {/* </div> */}
     </>
