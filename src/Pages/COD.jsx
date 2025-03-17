@@ -26,7 +26,7 @@ const COD = () => {
   ];
 
   const integrationItems = [
-    'https://picsum.photos/500/500?grayscale',
+    'https://picsum.photos/200/300',
     'https://picsum.photos/600/600?grayscale',
     'https://picsum.photos/400/400?grayscale'
   ];
@@ -52,13 +52,6 @@ const COD = () => {
 
   return (
     <>
-      {/* <div className="bg-black h-screen text-white w-full h-fit px-12 bg-radial-[at_90%_80%] from-[#fe971e] to-15%"
-        style={{
-          WebkitMaskImage: "radial-gradient(circle at 90% 90%, transparent 90%, white 90%)",
-          maskImage: "radial-gradient(circle at 90% 100%, transparent 10%, white 25%)",
-          // zIndex: -1
-        }} */}
-      {/* > */}
       {/* <Cursor/> */}
       <section className="bg-black text-white  xl:h-screen">
         <div className=" flex flex-col items-center w-full  h-screen align-middle justify-between ">
@@ -69,7 +62,7 @@ const COD = () => {
             <div className="md:w-1/2 text-center md:text-left">
 
               <div className='items-center text-center justify-center flex flex-col gap-5 mt-10'>
-                <h4 className="text-green-400 font-bold uppercase ">Rabbit Cash On Delivery</h4>
+                <h4 className="text-[#fe971e] font-bold uppercase ">Rabbit Cash On Delivery</h4>
                 <h1 className="text-4xl md:text-5xl font-extrabold mt-4 xl:mb-10">
                   Upfront Payment On <br />
                   <span className="text-gray-300">Cash On Delivery Orders.</span>
@@ -84,7 +77,7 @@ const COD = () => {
 
                 <div className='flex gap-15'>
                   <div c>
-                    <h2 className="text-green-400 text-3xl font-bold">
+                    <h2 className="text-[#fe971e] text-3xl font-bold">
                       <Count
                         from={0}
                         to={25000}
@@ -100,7 +93,7 @@ const COD = () => {
                     <line x1="10" y1="0" x2="10" y2="200" stroke="white" strokeWidth="1" />
                   </svg>
                   <div>
-                    <h2 className="text-green-400 text-3xl font-bold"><Count
+                    <h2 className="text-[#fe971e] text-3xl font-bold"><Count
                       from={0}
                       to={600}
                       separator=","
@@ -117,7 +110,7 @@ const COD = () => {
               </div>
 
               <div className="m-8">
-                <button className="bg-green-400 hover:bg-green-500 text-black font-semibold px-6 py-3 rounded-full shadow-lg transition duration-300">
+                <button className="bg-[#fe971e] hover:bg-[#cc6600] cursor-pointer text-white font-semibold px-6 py-3 rounded-full shadow-lg">
                   Contact Sales
                 </button>
               </div>
@@ -154,7 +147,7 @@ const COD = () => {
         </div>
       </div>
 
-      {/* <div style={{ height: '500px', position: 'relative' }}>
+      <div style={{ height: '500px', position: 'relative' }}>
         <InfiniteScroll
           items={infiniteItems}
           isTilted={true}
@@ -164,22 +157,20 @@ const COD = () => {
           autoplayDirection="down"
           pauseOnHover={false}
         />
-      </div> */}
+      </div>
 
 
       <section className='h-contain bg-black'>
-
         <div className="min-h-screen bg-black text-white flex flex-col items-center py-12 px-6">
 
-
-          <h2 className="text-3xl font-bold text-center mb-8">
+          <h2 className="text-3xl font-bold text-center">
             Why <span className="text-[#fe971e]">RABBIT.</span>
           </h2>
 
           <div>
-            <div className='flex flex-row'>
+            <div className='flex flex-col xl:flex-row'>
 
-              <div className="w-full max-w-5xl m-10 justify-center align-middle">
+              <div className="w-full max-w-5xl m-10 justify-center align-middle xl:mt-[15%]">
                 {/* Stats Section */}
                 <div className="flex flex-col ">
                   <StatsCard value="PKR 25B+" description="Value of upfront payments made" />
@@ -188,7 +179,7 @@ const COD = () => {
                 </div>
               </div>
 
-              <div className='flex flex-row '>
+              <div className='flex flex-col xl:flex-row '>
                 {/* Pie Chart */}
                 <PieChartComponent />
 
