@@ -5,8 +5,9 @@ import Cursor from './../Components/CursorSplash'
 import Scroll from './../Components/ScrollCod'
 import CardOfCod from '../Components/CardOfCod'
 import AvailableIntegration from './../Components/AvailableIntegration'
-
-
+import InfiniteScroll from './../Components/InfiniteIntegrationMenu'
+import StatsCard from '../Components/StatsCard'
+import {PieChartComponent, LineChartComponent} from './../Components/Charts'
 const COD = () => {
   const items = [
     { image: 'https://picsum.photos/300/300?grayscale', link: 'https://google.com/', title: 'Screen 1' },
@@ -26,6 +27,25 @@ const COD = () => {
     'https://picsum.photos/600/600?grayscale',
     'https://picsum.photos/400/400?grayscale'
   ];
+
+  const infiniteItems = [
+    { content: "APPLE" },
+    { content: <p>AMAZON</p> },
+    { content: "SAMSUNG" },
+    { content: <p>ReactJs</p> },
+    { content: "TailwindCss" },
+    { content: <p>Paragraph Item 6</p> },
+    { content: "Text Item 7" },
+    { content: <p>Paragraph Item 8</p> },
+    { content: "Text Item 9" },
+    { content: <p>Paragraph Item 10</p> },
+    { content: "Text Item 11" },
+    { content: <p>Paragraph Item 12</p> },
+    { content: "Text Item 13" },
+    { content: <p>Paragraph Item 14</p> },
+  ];
+
+
 
   return (
     <>
@@ -120,7 +140,7 @@ const COD = () => {
 
 
       <div className="min-h-screen bg-black text-white flex flex-col items-center py-12 px-6">
-        <h2 className="text-sm text-green-400 font-semibold">FEATURES</h2>
+        <h2 className="text-sm text-[#fe971e] font-semibold">FEATURES</h2>
         <h1 className="text-3xl font-bold text-center mb-8">
           State of the Art Logistics Solution
         </h1>
@@ -131,11 +151,44 @@ const COD = () => {
         </div>
       </div>
 
-      <div  style={{ height: '600px', width:"310px", position: 'relative' }} className='border-amber-500 bg-black border-2'>
-        <AvailableIntegration items={integrationItems} />
+      <div style={{ height: '500px', position: 'relative' }}>
+        <InfiniteScroll
+          items={infiniteItems}
+          isTilted={true}
+          tiltDirection='left'
+          autoplay={true}
+          autoplaySpeed={2}
+          autoplayDirection="down"
+          pauseOnHover={false}
+        />
       </div>
       <section className='h-screen bg-black'>
+      
+      <div className="min-h-screen bg-black text-white flex flex-col items-center py-12 px-6">
+      <h2 className="text-3xl font-bold text-center mb-8">
+        Why <span className="text-[#fe971e]">RABBIT.</span>
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl">
+        {/* Stats Section */}
+        <div className="flex flex-col gap-0 xl:gap-0">
+          <StatsCard value="PKR 25B+" description="Value of upfront payments made" />
+          <StatsCard value="25,000+" description="Happy & Growing merchants" />
+          <StatsCard value="92%" description="Delivery Success Rate" />
+        </div>
 
+        {/* Pie Chart */}
+        <div className="flex flex-col items-center">
+          <PieChartComponent />
+          <p className="text-center mt-4">Logistic Market Share</p>
+        </div>
+
+        {/* Line Chart */}
+        <div className="flex flex-col items-center">
+          <LineChartComponent />
+          <p className="text-center mt-4">Growth</p>
+        </div>
+      </div>
+    </div>
       </section>
     </>
   )
