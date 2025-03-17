@@ -131,10 +131,12 @@ const COD = () => {
         </div>
       </div>
 
-      <div style={{ height: '600px', position: 'relative' }}>
+      <div  style={{ height: '600px', width:"310px", position: 'relative' }} className='border-amber-500 bg-black border-2'>
         <AvailableIntegration items={integrationItems} />
       </div>
-      {/* </div> */}
+      <section className='h-screen bg-black'>
+
+      </section>
     </>
   )
 }
