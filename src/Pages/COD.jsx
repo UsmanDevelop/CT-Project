@@ -7,7 +7,10 @@ import CardOfCod from '../Components/CardOfCod'
 import AvailableIntegration from './../Components/AvailableIntegration'
 import InfiniteScroll from './../Components/InfiniteIntegrationMenu'
 import StatsCard from '../Components/StatsCard'
-import {PieChartComponent, LineChartComponent} from './../Components/Charts'
+import { PieChartComponent, LineChartComponent } from './../Components/Charts'
+import Footer from './Footer'
+
+
 const COD = () => {
   const items = [
     { image: 'https://picsum.photos/300/300?grayscale', link: 'https://google.com/', title: 'Screen 1' },
@@ -151,7 +154,7 @@ const COD = () => {
         </div>
       </div>
 
-      <div style={{ height: '500px', position: 'relative' }}>
+      {/* <div style={{ height: '500px', position: 'relative' }}>
         <InfiniteScroll
           items={infiniteItems}
           isTilted={true}
@@ -161,35 +164,43 @@ const COD = () => {
           autoplayDirection="down"
           pauseOnHover={false}
         />
-      </div>
-      <section className='h-screen bg-black'>
-      
-      <div className="min-h-screen bg-black text-white flex flex-col items-center py-12 px-6">
-      <h2 className="text-3xl font-bold text-center mb-8">
-        Why <span className="text-[#fe971e]">RABBIT.</span>
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl">
-        {/* Stats Section */}
-        <div className="flex flex-col gap-0 xl:gap-0">
-          <StatsCard value="PKR 25B+" description="Value of upfront payments made" />
-          <StatsCard value="25,000+" description="Happy & Growing merchants" />
-          <StatsCard value="92%" description="Delivery Success Rate" />
-        </div>
+      </div> */}
 
-        {/* Pie Chart */}
-        <div className="flex flex-col items-center">
-          <PieChartComponent />
-          <p className="text-center mt-4">Logistic Market Share</p>
-        </div>
 
-        {/* Line Chart */}
-        <div className="flex flex-col items-center">
-          <LineChartComponent />
-          <p className="text-center mt-4">Growth</p>
+      <section className='h-contain bg-black'>
+
+        <div className="min-h-screen bg-black text-white flex flex-col items-center py-12 px-6">
+
+
+          <h2 className="text-3xl font-bold text-center mb-8">
+            Why <span className="text-[#fe971e]">RABBIT.</span>
+          </h2>
+
+          <div>
+            <div className='flex flex-row'>
+
+              <div className="w-full max-w-5xl m-10 justify-center align-middle">
+                {/* Stats Section */}
+                <div className="flex flex-col ">
+                  <StatsCard value="PKR 25B+" description="Value of upfront payments made" />
+                  <StatsCard value="25,000+" description="Happy & Growing merchants" />
+                  <StatsCard value="92%" description="Delivery Success Rate" />
+                </div>
+              </div>
+
+              <div className='flex flex-row '>
+                {/* Pie Chart */}
+                <PieChartComponent />
+
+                {/* Line Chart */}
+                <LineChartComponent />
+              </div>
+
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
       </section>
+      <Footer />
     </>
   )
 }
