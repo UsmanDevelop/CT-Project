@@ -40,7 +40,7 @@ function HowItWorks() {
                 <div key={index} className={`relative flex flex-col items-center text-center p-5 w-1/2 xl:w-1/3 ${step.position} ${index % 2 === 0 ? "md:self-start" : "md:self-end"} `}>
                   <img src={step.img} alt={step.title} className="h-66 w-66 mb-[-80px]" />
                   <h3 className="font-bold text-lg mt-3">{step.title}</h3>
-                  <p className="text-gray-400 mt-2 hidden xl:block text-sm text-center p-6 xl:mr-10 xl:ml-10">{step.description}</p>
+                  <p className="text-gray-400 hidden xl:block text-sm text-center p-6 xl:mr-5 xl:ml-5">{step.description}</p>
                 </div>
               ))}
             </div>
