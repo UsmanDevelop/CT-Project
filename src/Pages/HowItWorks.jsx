@@ -1,5 +1,4 @@
 import React from 'react'
-import ShapeBlur from '../Components/ShapeBlur'
 
 import pickup from './../assets/PICKUP.png'
 import secure from './../assets/SECURETRANSIT.png'
@@ -39,17 +38,6 @@ function HowItWorks() {
               <img src={mobilePath} className='xl:invisible absolute visible top-[2rem] left-[30%] h-sreen'/>
               {steps.map((step, index) => (
                 <div key={index} className={`relative flex flex-col items-center text-center p-5 w-1/2 xl:w-1/3 ${step.position} ${index % 2 === 0 ? "md:self-start" : "md:self-end"} `}>
-
-                  <ShapeBlur
-                    className={`h-[10px] overflow-hidden absolute hidden xl:block`}
-                    variation={0}
-                    pixelRatioProp={window.devicePixelRatio || 1}
-                    shapeSize={1.6}
-                    roundness={0.5}
-                    borderSize={0.07}
-                    circleSize={0.5}
-                    circleEdge={1}
-                  />
                   <img src={step.img} alt={step.title} className="h-66 w-66 mb-[-80px]" />
                   <h3 className="font-bold text-lg mt-3">{step.title}</h3>
                   <p className="text-gray-400 mt-2 hidden xl:block text-sm text-center p-6 xl:mr-10 xl:ml-10">{step.description}</p>
