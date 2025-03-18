@@ -1,6 +1,7 @@
 import React from 'react'
 import ManageEverything from '../Components/ManageEverything'
 import Marquee from 'react-fast-marquee'
+
 import brandLogo1 from './../assets/Home/Partners/brandLogo1.png'
 import brandLogo2 from './../assets/Home/Partners/brandLogo2.png'
 import brandLogo3 from './../assets/Home/Partners/brandLogo3.png'

@@ -1,4 +1,5 @@
 import React from 'react'
+
 import NavBar from './../Components/NavBar'
 import Count from './../Components/Counter'
 import Cursor from './../Components/CursorSplash'
@@ -9,7 +10,16 @@ import InfiniteScroll from './../Components/InfiniteIntegrationMenu'
 import StatsCard from '../Components/StatsCard'
 import { PieChartComponent, LineChartComponent } from './../Components/Charts'
 import Footer from './Footer'
+import pakistan from './../../../../../pakistan.jpg'
 
+import Marquee from 'react-fast-marquee'
+import { motion } from 'framer-motion'
+
+import brandLogo1 from './../assets/Home/Partners/brandLogo1.png'
+import brandLogo2 from './../assets/Home/Partners/brandLogo2.png'
+import brandLogo3 from './../assets/Home/Partners/brandLogo3.png'
+import brandLogo4 from './../assets/Home/Partners/brandLogo4.png'
+import brandLogo5 from './../assets/Home/Partners/brandLogo5.png'
 
 const COD = () => {
   const items = [
@@ -30,24 +40,6 @@ const COD = () => {
     'https://picsum.photos/600/600?grayscale',
     'https://picsum.photos/400/400?grayscale'
   ];
-
-  const infiniteItems = [
-    { content: "APPLE" },
-    { content: <p>AMAZON</p> },
-    { content: "SAMSUNG" },
-    { content: <p>ReactJs</p> },
-    { content: "TailwindCss" },
-    { content: <p>Paragraph Item 6</p> },
-    { content: "Text Item 7" },
-    { content: <p>Paragraph Item 8</p> },
-    { content: "Text Item 9" },
-    { content: <p>Paragraph Item 10</p> },
-    { content: "Text Item 11" },
-    { content: <p>Paragraph Item 12</p> },
-    { content: "Text Item 13" },
-    { content: <p>Paragraph Item 14</p> },
-  ];
-
 
 
   return (
@@ -73,10 +65,10 @@ const COD = () => {
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row mt-8 space-y-6 sm:space-y-0 sm:space-x-12">
+              <div className="flex flex-col sm:flex-row mt-8 space-y-6 sm:space-y-0 sm:space-x-12 bg-black">
 
-                <div className='flex gap-15'>
-                  <div c>
+                <div className='flex gap-15 bg-black'>
+                  <div>
                     <h2 className="text-[#fe971e] text-3xl font-bold">
                       <Count
                         from={0}
@@ -107,20 +99,20 @@ const COD = () => {
                   </div>
                 </div>
 
+                <div className='bg-black'>
+                  <button className="bg-[#fe971e] hover:bg-[#cc6600] cursor-pointer text-white font-semibold px-6 py-3 rounded-full shadow-lg">
+                    Contact Sales
+                  </button>
+                </div>
               </div>
 
-              <div className="m-8">
-                <button className="bg-[#fe971e] hover:bg-[#cc6600] cursor-pointer text-white font-semibold px-6 py-3 rounded-full shadow-lg">
-                  Contact Sales
-                </button>
-              </div>
 
             </div>
 
             {/* Right Side: Map Image */}
             <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center bg-black">
               <img
-                src="/mnt/data/image.png" // Replace with the correct image path
+                src={pakistan} // Replace with the correct image path
                 alt="Map Representation"
                 className="w-full max-w-md md:max-w-lg"
               />
@@ -129,7 +121,7 @@ const COD = () => {
         </div>
 
       </section>
-      <div className='p-20 h-[900px] xl:w-full relative bg-black text-white items-center mt-50 '>
+      <div className='p-20 h-[900px] xl:w-full relative bg-black text-white items-center'>
 
         <Scroll items={items} />
       </div>
@@ -147,16 +139,45 @@ const COD = () => {
         </div>
       </div>
 
-      <div style={{ height: '500px', position: 'relative' }}>
-        <InfiniteScroll
-          items={infiniteItems}
-          isTilted={true}
-          tiltDirection='left'
-          autoplay={true}
-          autoplaySpeed={2}
-          autoplayDirection="down"
-          pauseOnHover={false}
-        />
+      <div className=' w-screen overflow-hidden lg:w-[99.9%] bg-black'>
+        <Marquee className='w-screen' pauseOnHover gradient gradientColor='black'>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" className='relative top-0 right-0 h-30 w-5' >
+            <line x1="10" y1="0" x2="10" y2="200" stroke="#fe971e" strokeWidth="4" />
+          </svg>
+          <div className='mr-15 ml-15 '>
+            <img src={brandLogo1} />
+          </div>
+
+          <svg xmlns="http://www.w3.org/2000/svg" className='relative top-0 right-0 h-30 w-5' >
+            <line x1="10" y1="0" x2="10" y2="200" stroke="#fe971e" strokeWidth="4" />
+          </svg>
+          <div className='mr-15 ml-15 '>
+            <img src={brandLogo2} />
+          </div>
+
+          <svg xmlns="http://www.w3.org/2000/svg" className='relative top-0 right-0 h-30 w-5' >
+            <line x1="10" y1="0" x2="10" y2="200" stroke="#fe971e" strokeWidth="4" />
+          </svg>
+          <div className='mr-15 ml-15 '>
+            <img src={brandLogo3} />
+          </div>
+
+          <svg xmlns="http://www.w3.org/2000/svg" className='relative top-0 right-0 h-30 w-5' >
+            <line x1="10" y1="0" x2="10" y2="200" stroke="#fe971e" strokeWidth="4" />
+          </svg>
+          <div className='mr-15 ml-15'>
+            <img src={brandLogo4} />
+          </div>
+
+          <svg xmlns="http://www.w3.org/2000/svg" className='relative top-0 right-0 h-30 w-5' >
+            <line x1="10" y1="0" x2="10" y2="200" stroke="#fe971e" strokeWidth="4" />
+          </svg>
+          <div className='mr-15 ml-15'>
+            <img src={brandLogo5} />
+          </div>
+
+        </Marquee>
       </div>
 
 
@@ -179,13 +200,21 @@ const COD = () => {
                 </div>
               </div>
 
-              <div className='flex flex-col xl:flex-row '>
+              <motion.div className='flex flex-col xl:flex-row '
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: true }}
+
+              >
                 {/* Pie Chart */}
                 <PieChartComponent />
 
                 {/* Line Chart */}
-                <LineChartComponent />
-              </div>
+                <div className='xl:w-90%'>
+                  <LineChartComponent />
+                </div>
+              </motion.div>
 
             </div>
           </div>
