@@ -33,13 +33,7 @@ const COD = () => {
     { icon: "📍", title: "Nationwide Coverage", description: "We cover the entire country, ensuring your items reach their destination hassle-free.", },
     { icon: "💲", title: "Flexible Pricing", description: "Adjust costs to fit your budget with customizable options and personalized payment plans.", },
     { icon: "⚙️", title: "Easy Integration", description: "Instantly integrate our user-friendly APIs with any e-commerce platform for a hassle-free setup.", },
-  ];
-
-  const integrationItems = [
-    'https://picsum.photos/200/300',
-    'https://picsum.photos/600/600?grayscale',
-    'https://picsum.photos/400/400?grayscale'
-  ];
+  ];maruga
 
 
   return (
