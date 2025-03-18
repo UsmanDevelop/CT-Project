@@ -13,7 +13,7 @@ function Services() {
         <h3 className="text-orange-500 uppercase tracking-widest">Our Services</h3>
         <h2 className="text-4xl font-bold mt-2">
           What We <span className="text-orange-500">Do.</span>
-          <svg 
+          {/* <svg 
             width="220"
             height="88"
             className='relative top-[-70px] left-135 hidden xl:block' 
@@ -33,7 +33,7 @@ function Services() {
               strokeWidth='2'
 
             />
-            </svg>
+            </svg> */}
 
         </h2>
         <p className="text-gray-400 max-w-2xl mx-auto mt-4">
