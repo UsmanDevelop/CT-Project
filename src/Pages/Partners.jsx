@@ -78,9 +78,9 @@ function Partners() {
 
 
 
-      <div className=' w-full flex flex-col items-center h-screen '>
+      <div className=' w-full flex flex-col items-center h-screen'>
       
-              <div className="text-center text-5xl items-center font-extrabold font-serif w-contain  h-30">
+              <div className="text-center text-5xl items-center font-extrabold font-serif w-contain h-30 mt-[90px]">
                 Manage Everything in <span className="text-[#fe971e]">One Place!</span>
               </div>
 
