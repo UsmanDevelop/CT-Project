@@ -33,7 +33,7 @@ const COD = () => {
     { icon: "📍", title: "Nationwide Coverage", description: "We cover the entire country, ensuring your items reach their destination hassle-free.", },
     { icon: "💲", title: "Flexible Pricing", description: "Adjust costs to fit your budget with customizable options and personalized payment plans.", },
     { icon: "⚙️", title: "Easy Integration", description: "Instantly integrate our user-friendly APIs with any e-commerce platform for a hassle-free setup.", },
-  ];maruga
+  ];
 
 
   return (

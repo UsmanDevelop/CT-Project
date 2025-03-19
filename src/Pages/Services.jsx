@@ -41,7 +41,7 @@ function Services() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 item-center ">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mt-12 item-center ">
         {/* Service Card */}
         <TiltedCard
           // imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"

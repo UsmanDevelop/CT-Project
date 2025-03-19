@@ -18,12 +18,12 @@ import bookAppointment from './../assets/Home/ManageEverything/bookshipments.png
 
 
 const cards = [
-  { title: "Rate the Rider", description: "Give feedback to improve service quality.", icon: rateRider, position: "top-[-67rem] left-[-2rem] lg:left-[-15rem] md:left-[-15rem]" },
-  { title: "Support", description: "Get 24/7 assistance whenever you need it.", icon: support, position: "top-[-66rem] right-[-2rem] lg:right-[-25rem] md:right-[-15rem]" },
-  { title: "Track Shipments", description: "Real-time tracking for all your deliveries.", icon: trackShipment, position: "top-[-65rem] left-[-2rem] lg:left-[-30rem] md:left-[-10rem] " },
-  { title: "Manage Orders", description: "Keep track of all past & current shipments.", icon: manageOrder, position: "top-[-64rem] right-[-2rem] lg:right-[-15rem] md:right-[-10rem] md:top-[-67rem]" },
-  { title: "Book Your Shipment", description: "Schedule pickups & manage shipments easily.", icon: bookAppointment, position: "top-[-63rem] left-[-2rem] lg:left-[-15rem] md:left-[-15rem]" },
-  { title: "Track Your Payments", description: "View completed & pending payments.", icon: trackPayment, position: "top-[-62rem] right-[-2rem] lg:right-[-25rem] md:right-[-15rem] md:top-[-70rem]" },
+  { title: "Rate the Rider", description: "Give feedback to improve service quality.", icon: rateRider, position: "top-[-4rem] xl:top-[-50rem] left-[-2rem] xl:left-[-15rem] md:left-[-15rem]" },
+  { title: "Support", description: "Get 24/7 assistance whenever you need it.", icon: support, position: "top-[-39rem] xl:top-[-56rem] right-[-2rem] xl:right-[-25rem] md:right-[-15rem]" },
+  { title: "Track Shipments", description: "Real-time tracking for all your deliveries.", icon: trackShipment, position: "top-[-54rem] left-[-2rem] xl:left-[-30rem] md:left-[-10rem] " },
+  { title: "Manage Orders", description: "Keep track of all past & current shipments.", icon: manageOrder, position: "lg:top-[-54rem] right-[-2rem] xl:right-[-15rem] md:right-[-10rem] md:top-[-67rem]" },
+  { title: "Book Your Shipment", description: "Schedule pickups & manage shipments easily.", icon: bookAppointment, position: "top-[-53rem] left-[-2rem] xl:left-[-15rem] md:left-[-15rem]" },
+  { title: "Track Your Payments", description: "View completed & pending payments.", icon: trackPayment, position: "lg:top-[-58rem] right-[-2rem] xl:right-[-25rem] md:right-[-15rem] md:top-[-70rem]" },
 ];
 
 
