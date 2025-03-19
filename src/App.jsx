@@ -26,10 +26,10 @@ function App() {
         <Services />
         <HowItWorks />
 
-        <div className='h-contain'>
+        <div className=''>
           <Partners />
         </div>
-        <div className=' top-[-15rem] relative h-fit'>
+        <div className='h-fit'>
 
         <Footer />
         </div>

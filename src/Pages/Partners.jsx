@@ -56,8 +56,7 @@ function Partners() {
 
         </Marquee>
       </div>
-      <div>
-
+      <div >
       <ManageEverything/>
       </div>
     </div>
