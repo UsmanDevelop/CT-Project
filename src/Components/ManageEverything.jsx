@@ -10,7 +10,7 @@ import bookAppointment from './../assets/Home/ManageEverything/bookshipments.png
 
 
 function ManageEverything() {
-  
+
   const cards = [
     { title: "Rate the Rider", description: "Give feedback to improve service quality.", icon: rateRider, position: "top-[-67rem] left-[-2rem] lg:left-[-15rem] md:left-[-15rem]" },
     { title: "Support", description: "Get 24/7 assistance whenever you need it.", icon: support, position: "top-[-66rem] right-[-2rem] lg:right-[-25rem] md:right-[-15rem]" },
@@ -19,18 +19,18 @@ function ManageEverything() {
     { title: "Book Your Shipment", description: "Schedule pickups & manage shipments easily.", icon: bookAppointment, position: "top-[-63rem] left-[-2rem] lg:left-[-15rem] md:left-[-15rem]" },
     { title: "Track Your Payments", description: "View completed & pending payments.", icon: trackPayment, position: "top-[-62rem] right-[-2rem] lg:right-[-25rem] md:right-[-15rem] md:top-[-70rem]" },
   ];
-  
+
   return (
     <>
-    <div className=' w-full flex flex-col align-bottom justify-center items-center h-[90%] mt-[200px]'>
-    
-    <div className="text-center text-5xl items-center font-extrabold font-serif w-contain h-30 ">
-        Manage Everything in <span className="text-[#fe971e]">One Place!</span>
-    </div>
-    <div className='items-center relative '>
-      <img className='w-150' src={mobilemockup}/>
-    </div>
-       
+      <div className=' w-full flex flex-col align-bottom justify-center items-center h-[90%]'>
+
+        <div className="text-center text-5xl items-center font-extrabold font-serif w-contain h-30 ">
+          Manage Everything in <span className="text-[#fe971e]">One Place!</span>
+        </div>
+        <div className='items-center relative '>
+          <img className='w-150' src={mobilemockup} />
+        </div>
+
         {/* Floating Cards */}
         {cards.map((card, index) => (
           <div
@@ -45,8 +45,8 @@ function ManageEverything() {
           </div>
 
         ))}
-    
-    </div>
+
+      </div>
     </>
   )
 }

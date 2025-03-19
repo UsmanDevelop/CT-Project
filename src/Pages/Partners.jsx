@@ -10,13 +10,13 @@ import brandLogo5 from './../assets/Home/Partners/brandLogo5.png'
 
 function Partners() {
   return (
-    <div className=" max-w-screen text-white h-contain ">
+    <div className=" max-w-screen text-white h-fit">
       {/* Partners Section */}
       <div className="pt-10 text-center text-5xl font-extrabold font-serif lg:w-[96%] bg-gradient-to-l from-black to-yellow-900 mb-6 h-30">
         Our <span className="text-[#fe971e]">Partners</span>
       </div>
 
-      <div className=' w-screen overflow-hidden lg:w-[95%]'>
+      <div className=' w-screen overflow-hidden lg:w-[95%] h-fit'>
         <Marquee className='w-screen' pauseOnHover gradient gradientColor='black'>
 
           <svg xmlns="http://www.w3.org/2000/svg" className='relative top-0 right-0 h-30 w-5' >
