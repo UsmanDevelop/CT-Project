@@ -29,7 +29,7 @@ function App() {
         <div className=''>
           <Partners />
         </div>
-        <div className='h-fit'>
+        <div className=''>
 
         <Footer />
         </div>
