@@ -13,7 +13,7 @@ import mobilePath from './../assets/PATHMOBILE.png'
 const steps = [
   { title: "Pickup from Your Location", description: "Our rider picks up your parcel from your home or office.", img: pickup, position: "xl:top-[-7rem] xl:left-[6rem] top-[-10rem] left-[-2rem]" },
   { title: "Secure Transit to Warehouse", description: "The parcel is safely stored in our warehouse before forwarding.", img: secure, position: "xl:top-[-1rem] xl:left-[30rem] left-[-12rem] top-[5rem] sm:left-[-22rem] md:left-[-26rem] lg:left-[-30rem]" },
-  { title: "Forwarding to Destination", description: "We process and send the parcel to the destination warehouse.", img: forwarding, position: "xl:top-[10rem] xl:left-[-50rem] left-[15rem] top-[-2rem]" },
+  { title: "Forwarding to Destination", description: "We process and send the parcel to the destination warehouse.", img: forwarding, position: "xl:top-[10rem] xl:left-[-50rem] left-[12rem] sm:left-[15rem] top-[-2rem]" },
   { title: "Final Delivery Attempt", description: "Our rider delivers the parcel to your client, attempting 2-3 times if needed.", img: finalDelivery, position: "xl:top-[-5rem] xl:left-[35rem] left-[-12rem] sm:left-[-22rem] md:left-[-26rem] lg:left-[-30rem] top-[9rem]" },
   { title: "Payment Transfer or Return", description: "Successful delivery? Your payment is transferred. If returned, the parcel comes back safely.", img: payment, position: "xl:top-[4rem] xl:left-[-56rem] right-[-12rem] top-[2rem] sm:right-[-23rem] sm:top-[5rem]" },
 ];
