@@ -84,7 +84,7 @@ export function LineChartComponent() {
               dataKey="value"
               stroke="#00FF99"
               strokeWidth={2}
-              dot={{ fill: "#00FF99", strokeWidth: 0, r: 4 }} // Dots on line
+              dot={{ fill: "#00FF99", strokeWidth: 0, r: 4 }}
             />
 
             {/* Tooltip */}
@@ -92,7 +92,7 @@ export function LineChartComponent() {
               contentStyle={{ backgroundColor: "#000", color: "#fff", borderRadius: "5px", border: "1px solid #333" }}
               itemStyle={{ color: "#fe971e" }}
               cursor={false}
-              
+
             />
           </AreaChart>
         </ResponsiveContainer>
