@@ -78,7 +78,6 @@ export function LineChartComponent() {
             {/* Filled Area */}
             <Area type="linear" dataKey="value" stroke="none" fill="#ffc400" dot={{ fill: "#fe971e", r: 4 }} />
 
-
             <Line
               type="monotone"
               dataKey="value"
