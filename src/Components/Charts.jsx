@@ -92,6 +92,7 @@ export function LineChartComponent() {
               contentStyle={{ backgroundColor: "#000", color: "#fff", borderRadius: "5px", border: "1px solid #333" }}
               itemStyle={{ color: "#fe971e" }}
               cursor={false}
+              
             />
           </AreaChart>
         </ResponsiveContainer>
