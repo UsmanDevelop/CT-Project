@@ -86,8 +86,7 @@ export function LineChartComponent() {
               strokeWidth={2}
               dot={{ fill: "#00FF99", strokeWidth: 0, r: 4 }}
             />
-
-            {/* Tooltip */}
+            
             <Tooltip
               contentStyle={{ backgroundColor: "#000", color: "#fff", borderRadius: "5px", border: "1px solid #333" }}
               itemStyle={{ color: "#fe971e" }}
