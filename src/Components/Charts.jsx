@@ -78,7 +78,7 @@ export function LineChartComponent() {
             {/* Filled Area */}
             <Area type="linear" dataKey="value" stroke="none" fill="#ffc400" dot={{ fill: "#fe971e", r: 4 }} />
 
-            {/* Line with Dots */}
+
             <Line
               type="monotone"
               dataKey="value"
@@ -86,7 +86,7 @@ export function LineChartComponent() {
               strokeWidth={2}
               dot={{ fill: "#00FF99", strokeWidth: 0, r: 4 }}
             />
-            
+
             <Tooltip
               contentStyle={{ backgroundColor: "#000", color: "#fff", borderRadius: "5px", border: "1px solid #333" }}
               itemStyle={{ color: "#fe971e" }}
