@@ -20,7 +20,7 @@ const NavBar = () =>{
       <div className="hidden md:flex space-x-6">
         <NavLink to='/cod' className="hover:text-[#fe971e]">COD</NavLink>
         <NavLink to='/quickpayout' className="hover:text-[#fe971e]">Quick Payout</NavLink>
-        <NavLink to='' className="hover:text-[#fe971e]">Three Day Promise</NavLink>
+        <NavLink to='/threedaypromise' className="hover:text-[#fe971e]">Three Day Promise</NavLink>
         <NavLink to='' className="hover:text-[#fe971e] flex items-center">
           Track Order <span className="ml-1">🚚</span>
         </NavLink>
