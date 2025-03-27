@@ -22,15 +22,12 @@ function App() {
 
         <NavBar />
         <Home />
-
         <Services />
         <HowItWorks />
-
         <div className=''>
           <Partners />
         </div>
         <div className=''>
-
         <Footer />
         </div>
       </div>

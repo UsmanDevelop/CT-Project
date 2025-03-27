@@ -33,7 +33,6 @@ function home() {
         <div className="w-full h-full flex flex-col items-center align-bottom justify-center bg-radial-[at_20%_18%] from-[#1a0f06] to-20% md:flex-row md:justify-evenly ">
 
           <div className='mt-20 md:mt-0 z-20'>
-
             <h1 className="text-4xl font-bold">
               Get Instant Access <br />
               To <span className="text-[#fe971e]"><span ref={el} /></span>
